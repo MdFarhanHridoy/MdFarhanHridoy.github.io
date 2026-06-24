@@ -25,18 +25,19 @@
         }
 
         :root {
-            --primary-indigo: #6366f1;
-            --primary-violet: #8b5cf6;
-            --accent-gradient: linear-gradient(135deg, var(--primary-indigo), var(--primary-violet));
+            --primary-indigo: #5aa9e0;
+            --primary-violet: #2774ae;
+            --accent-gradient: linear-gradient(135deg, #2774ae, #002e5d, #002e5d);
+            --text-gradient: linear-gradient(120deg, #5aa9e0, #2774ae);
             --bg-primary: #0a0a0f;
             --bg-secondary: #12121a;
             --bg-card: #1a1a24;
             --text-primary: #f4f4f5;
             --text-secondary: #a1a1aa;
-            --border-color: rgba(139, 92, 246, 0.1);
+            --border-color: rgba(39, 116, 174, 0.15);
             --glass-bg: rgba(26, 26, 36, 0.8);
-            --glass-border: rgba(139, 92, 246, 0.2);
-            --shadow-color: rgba(99, 102, 241, 0.15);
+            --glass-border: rgba(39, 116, 174, 0.25);
+            --shadow-color: rgba(39, 116, 174, 0.2);
         }
 
         [data-theme="light"] {
@@ -45,10 +46,10 @@
             --bg-card: #ffffff;
             --text-primary: #18181b;
             --text-secondary: #71717a;
-            --border-color: rgba(139, 92, 246, 0.15);
+            --border-color: rgba(39, 116, 174, 0.2);
             --glass-bg: rgba(255, 255, 255, 0.9);
-            --glass-border: rgba(139, 92, 246, 0.2);
-            --shadow-color: rgba(99, 102, 241, 0.1);
+            --glass-border: rgba(39, 116, 174, 0.25);
+            --shadow-color: rgba(39, 116, 174, 0.12);
         }
 
         html {
@@ -102,7 +103,7 @@
         .section-title {
             font-size: 2.5rem;
             margin-bottom: 3rem;
-            background: var(--accent-gradient);
+            background: var(--text-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -164,7 +165,7 @@
             font-family: 'Space Grotesk', sans-serif;
             font-size: 1.5rem;
             font-weight: 700;
-            background: var(--accent-gradient);
+            background: var(--text-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -274,8 +275,8 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(ellipse at top right, rgba(99, 102, 241, 0.1), transparent 50%),
-                        radial-gradient(ellipse at bottom left, rgba(139, 92, 246, 0.1), transparent 50%);
+            background: radial-gradient(ellipse at top right, rgba(39, 116, 174, 0.12), transparent 50%),
+                        radial-gradient(ellipse at bottom left, rgba(39, 116, 174, 0.06), transparent 50%);
             z-index: -1;
         }
 
